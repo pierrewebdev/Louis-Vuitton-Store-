@@ -158,3 +158,30 @@
 .collection-player__button:hover{
     opacity: 0.8;
 }
+
+.footer{
+    background: #19110b;
+    padding: 40px 0;
+}
+
+.footer__title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.footer__links{
+    border-top: 1px solid rgba(131, 129, 129, 0.4);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
