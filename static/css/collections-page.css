@@ -1,0 +1,121 @@
+.collections-page{
+    /* padding-top: 125px; */
+}
+
+.collections-page h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 1rem 0;
+}
+
+.collections-filter{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #e8e8ef;
+    border-bottom: 1px solid #e8e8ef;
+}
+
+.collections-filter__title, .collections-filter__item{
+    height: 80px;
+    padding: 0 3rem;
+    border-right: 1px solid #eae8ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.collections-filter__title{
+    font-weight: 500;
+}
+
+.collections-filter__item:nth-last-child(1){
+    border: none;
+}
+
+.collections-products{
+    padding: 3rem;
+}
+
+.collections-products .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-rows: repeat(3, 500px);
+}
+
+.collections-products__item{
+    background:red;
+}
+
+.collections-products__item-box{
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.collections-products__item-heart{
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 0;
+}
+
+.collections-products__item-heart .fa-heart{
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    background: yellow;
+    vertical-align: middle;
+    line-height: 2.5rem;
+}
+
+.collections-products__slide{
+    flex:none;
+    width: 100%;
+}
+
+.collections-products__slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.collections-products__item-title{
+    padding: 0.7rem 0;
+    font-weight: 700;
+}
+
+.collections-products__left{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collections-products__right{
+    position: absolute;
+    right:0;
+    top:0;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collections-products__left-icon, .collections-products__right-icon{
+    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
